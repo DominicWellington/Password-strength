@@ -1,0 +1,90 @@
+body{
+    display: grid;
+    place-items: center;
+    margin: 0;
+    height: 100vh;
+    background-image: url(/image/IMG_4551.JPG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(255 255 255 / 50%);
+}
+
+.card{
+    width: 320px;
+    padding: 100px 30px 32px ;
+    border-radius: 20px;
+    background: rgb(0 0 0 / 21%);
+    backdrop-filter: blur(20px);
+    text-align: center;
+}
+.card > h2{
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0 0 6px;
+    color: whitesmoke;
+}
+.card > h3{
+    color: rgb(255 255 255 / 50%);
+    margin: 0 0 40px;
+    font-weight: 500;
+    font-size: 16px;
+}
+.control{
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    height: 56px;
+    padding: 0 16px;
+    background: rgb(255 255 255 / 6%);
+    color: #f9f9f9;
+    margin: 8px 0;
+    transition: 0.4s;
+    outline: none;
+}
+.container input.control ::placeholder{
+    color: rgb(255 255 255 / 25%);
+}
+
+.container > button.control{
+    width: 100%;
+    cursor: pointer;
+    padding: 5px 10px;
+    background: #3a75dc;
+    color: whitesmoke;
+    border: none;
+    font-size: 17px;
+    font-weight: 600px;
+    text-align: center;
+    transition: all 0.375s;
+}
+
+#bars{
+    margin: 8px 0;
+    display: flex;
+    align-items: center;
+    flex: 1 1 auto;
+    gap: 8px;
+    height: 6px;
+    border-radius: 3px;
+    background: rgb(255 255 255 / 6%);
+}
+#bars div{
+    height: 6px;
+    border-radius: 3px;
+    transition: 0.4s;
+    width: 0%;
+}
+#bars.weak div{
+    background: #d0424f;
+    width: 33.33%;
+}
+#bars.medium div{
+    background: #e58448;
+    width: 66.66%;
+}
+#bars.strong div{
+    background: #1eb965;
+    width: 100%;
+}
